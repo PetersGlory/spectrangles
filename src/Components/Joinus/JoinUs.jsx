@@ -9,7 +9,7 @@ export const JoinUs = () => {
   const [message, setMessage] = useState()
 
   const handleForm = ()=>{
-    const url = "http://localhost:5000/send";
+    const url = "https://spec-node.vercel.app/send";
     const datas = {
       fname: name,
       lname: lname,
