@@ -6,7 +6,8 @@ export const JoinUs = () => {
   const [name, setName] = useState()
   const [lname, setLname] = useState()
   const [mail, setMail] = useState()
-  
+  const [message, setMessage] = useState()
+
   const handleForm = ()=>{
     const url = "http://localhost:5000/send";
     const datas = {
@@ -24,6 +25,7 @@ export const JoinUs = () => {
     .then(data=>{
       console.log(data)
     });
+    setMessage("Application Sent.")
    },1000)
     // alert(datas.fname)
   }
@@ -166,6 +168,7 @@ export const JoinUs = () => {
            </div>
            <button className="btn btn-primary mx-auto d-block " onClick={handleForm} style={{width:"30%", marginTop:"20px", padding:"2%", backgroundColor:"#135896"}}>Submit Application</button>
          </div>
+         <p className="text-primary text-center">{message}</p>
         </div>
 
         {/* right section  */}
