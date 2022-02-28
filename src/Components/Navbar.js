@@ -7,7 +7,7 @@ export const Navbar = () => {
         <nav className="navbar navbar-expand-lg navbar-light">
             <div>
                 <Link to="/" className="navbar-brand" style={styles.pp}>
-                    <img src={logo} style={styles.logo} alt='logo/>    <p style={styles.p}>Spectrangle</p>
+                    <img src={logo} style={styles.logo} alt='logo'/>    <p style={styles.p}>Spectrangle</p>
                 </Link>
                 
                 <div id="navbarCollapse">
