@@ -5,7 +5,7 @@ export const Navbar = () => {
   return (
     <div>
         <nav className="navbar navbar-expand-lg navbar-light">
-            <div>
+            <div style={styles.container}>
                 <Link to="/" className="navbar-brand" style={styles.pp}>
                     <img src={logo} style={styles.logo} alt='logo'/>    <p style={styles.p}>Spectrangle</p>
                 </Link>
