@@ -18,11 +18,3 @@ export const Whatwedo = () => {
   )
 }
 
-const styles = {
-    // bg:{
-        
-    //     /* Color/Brand/Primary-80 */
-
-    //     // border: '4px dashed #1976C8',
-    // }
-}

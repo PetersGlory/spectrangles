@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="footer">
             <footer>
                 <div className="sectionOne">
-                <img src={logo} className="logo" /><p>Spectrangle</p>
+                <img src={logo} className="logo" alt="logo" /><p>Spectrangle</p>
                 </div>
                 <small>© 2022 TalentQL.</small>
 
