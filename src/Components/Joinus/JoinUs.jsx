@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import '../../assets/css/bootstrap.css'
+import axios from 'axios'
 
 
 export const JoinUs = () => {
@@ -9,23 +10,19 @@ export const JoinUs = () => {
   const [message, setMessage] = useState()
 
   const handleForm = ()=>{
-    const url = "https://spec-node.vercel.app/send";
+    // const url = "https://spec-node.vercel.app/send";'http://localhost/specapi/send.php'
+    const url = "http://leadcodegiants.hstn.me/specapi/send.php";
     const datas = {
       fname: name,
       lname: lname,
       email: mail
     }
    setTimeout(()=>{
-    fetch(url,{
-      method:"POST",
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(datas)
-    })
-    .then(res =>res.json())
-    .then(data=>{
-      console.log(data)
+    axios.post(url, datas).then(function(response){
+        console.log(response.data);
+        setMessage(response.data)
     });
-    setMessage("Application Sent.")
+    
    },1000)
     // alert(datas.fname)
   }

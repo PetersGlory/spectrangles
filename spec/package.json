@@ -4,7 +4,7 @@
   "description": "The backend of spectrangle to share to email",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    // "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
   "keywords": [
@@ -21,6 +21,7 @@
     "nodemailer": "^6.7.2"
   },
   "engines": {
-    "node": "16.13.1"
+    "node": "16.13.1",
+     // "npm": "1.3.x"
   },
 }
