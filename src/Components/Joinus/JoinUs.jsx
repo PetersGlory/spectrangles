@@ -11,7 +11,7 @@ export const JoinUs = () => {
 
   const handleForm = ()=>{
     // const url = "https://spec-node.vercel.app/send";'http://localhost/specapi/send.php'
-    const url = "http://leadcodegiants.hstn.me/specapi/send.php";
+    const url = "https://phpstack-737822-2472436.cloudwaysapps.com";
     const datas = {
       fname: name,
       lname: lname,
